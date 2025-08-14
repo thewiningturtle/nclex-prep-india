@@ -16,24 +16,29 @@ import {
 const Home = () => {
   const features = [
     {
-      icon: <Target className="h-6 w-6 text-primary" />,
-      title: "Expert Coaching",
-      description: "Specialized NCLEX preparation with proven teaching methods"
-    },
-    {
-      icon: <BookOpen className="h-6 w-6 text-primary" />,
-      title: "Comprehensive Study Material",
-      description: "Latest NCLEX-style questions and updated curriculum"
+      icon: <CheckCircle className="h-6 w-6 text-primary" />,
+      title: "100% NCLEX Syllabus Coverage",
+      description: "Complete curriculum coverage ensuring no topic is left behind"
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
-      title: "Small Batch Learning",
-      description: "Personalized attention with limited students per batch"
+      title: "Experienced Nursing Faculty",
+      description: "Learn from qualified and experienced nursing professionals"
     },
     {
-      icon: <Globe className="h-6 w-6 text-primary" />,
-      title: "US & Canada Licensing",
-      description: "Complete guidance for nursing license applications"
+      icon: <Clock className="h-6 w-6 text-primary" />,
+      title: "Flexible Batch Timings",
+      description: "Online & offline classes to fit your schedule"
+    },
+    {
+      icon: <Target className="h-6 w-6 text-primary" />,
+      title: "Critical Thinking & Exam Strategy",
+      description: "Focus on developing analytical skills and test-taking strategies"
+    },
+    {
+      icon: <Award className="h-6 w-6 text-primary" />,
+      title: "Special Attention for All",
+      description: "Dedicated support for first-time and repeat test-takers"
     }
   ];
 
@@ -238,14 +243,14 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Choose NCLEX India?
+              Why Choose Us?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We provide comprehensive NCLEX preparation with personalized attention and proven results
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="text-center p-6 h-full border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-0">
