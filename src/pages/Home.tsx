@@ -187,7 +187,7 @@ const Home = () => {
                       <Globe className="h-5 w-5 text-primary mr-2" />
                       Mode
                     </h3>
-                    <p className="text-lg text-muted-foreground">Classroom in Magarpatta City</p>
+                    <p className="text-lg text-muted-foreground">Classroom in Magarpatta City, Pune</p>
                     <p className="text-lg text-muted-foreground">Live and Online classes</p>
                   </div>
                 </div>
