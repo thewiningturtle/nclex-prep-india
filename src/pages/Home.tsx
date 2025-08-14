@@ -115,8 +115,126 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* We Offer Section */}
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              We Offer
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="text-center p-6 border-0 shadow-lg">
+              <CardContent className="p-0">
+                <div className="bg-trust-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  NCLEX-RN (Registered Nurse) Coaching
+                </h3>
+                <p className="text-muted-foreground">
+                  Comprehensive preparation for Registered Nurse licensure exam
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 border-0 shadow-lg">
+              <CardContent className="p-0">
+                <div className="bg-trust-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground mb-3">
+                  NCLEX-PN (Practical Nurse) Coaching
+                </h3>
+                <p className="text-muted-foreground">
+                  Specialized training for Practical Nurse certification
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Course & Syllabus Section */}
       <section className="py-20 bg-secondary/30">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Course & Syllabus
+            </h2>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-0 shadow-lg">
+              <CardContent className="p-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
+                      <Clock className="h-5 w-5 text-primary mr-2" />
+                      Duration
+                    </h3>
+                    <p className="text-lg text-muted-foreground">2 Months</p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-4 flex items-center">
+                      <Globe className="h-5 w-5 text-primary mr-2" />
+                      Mode
+                    </h3>
+                    <p className="text-lg text-muted-foreground">Classroom in Magarpatta City</p>
+                    <p className="text-lg text-muted-foreground">Live and Online classes</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-6 flex items-center">
+                    <BookOpen className="h-5 w-5 text-primary mr-2" />
+                    Syllabus Includes
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Safe & Effective Care Environment</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Health Promotion & Maintenance</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Psychosocial Integrity</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Physiological Integrity</span>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Pharmacology & Drug Administration</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Priority & Delegation Questions</span>
+                      </div>
+                      <div className="flex items-start">
+                        <CheckCircle className="h-5 w-5 text-success mt-1 mr-3 flex-shrink-0" />
+                        <span className="text-muted-foreground">Practice Exams & Time Management Skills</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -148,7 +266,7 @@ const Home = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-secondary/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

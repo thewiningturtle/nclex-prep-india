@@ -91,6 +91,10 @@ const Contact = () => {
 
   const faqs = [
     {
+      question: "What is NCLEX?",
+      answer: "The NCLEX (National Council Licensure Examination) is the qualifying exam for nurses who wish to practice in the United States or Canada. Passing it opens the door to international career opportunities with high-paying nursing positions abroad."
+    },
+    {
       question: "What is the duration of your NCLEX courses?",
       answer: "Our courses range from 1-4 months depending on the program you choose. We offer intensive crash courses and comprehensive preparation programs."
     },
