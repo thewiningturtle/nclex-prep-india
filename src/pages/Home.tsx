@@ -12,8 +12,6 @@ import {
   Award,
   Clock
 } from "lucide-react";
-import heroImage from "@/assets/hero-nurse-patient.jpg";
-import studentsImage from "@/assets/students-studying.jpg";
 import graduateImage from "@/assets/graduate-success.jpg";
 import instructorImage from "@/assets/instructor-teaching.jpg";
 
@@ -79,37 +77,28 @@ const Home = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-trust-light to-background py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-                Ace Your NCLEX —{" "}
-                <span className="text-primary">Start Your Journey</span>{" "}
-                to the U.S. or Canada Today
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Join India's most trusted NCLEX coaching program. Expert faculty, proven methods, 
-                and comprehensive support to help you achieve your dream of nursing abroad.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="px-8 py-6 text-lg">
-                  <Link to="/contact">
-                    Join Our Classes
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="px-8 py-6 text-lg">
-                  <Link to="/courses">
-                    View Courses
-                  </Link>
-                </Button>
-              </div>
-            </div>
-            <div className="lg:order-first">
-              <img 
-                src={heroImage} 
-                alt="Professional nurse caring for patient in modern hospital setting" 
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+              Ace Your NCLEX —{" "}
+              <span className="text-primary">Start Your Journey</span>{" "}
+              to the U.S. or Canada Today
+            </h1>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Join India's most trusted NCLEX coaching program. Expert faculty, proven methods, 
+              and comprehensive support to help you achieve your dream of nursing abroad.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="px-8 py-6 text-lg">
+                <Link to="/contact">
+                  Join Our Classes
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="px-8 py-6 text-lg">
+                <Link to="/courses">
+                  View Courses
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -272,47 +261,31 @@ const Home = () => {
       {/* Features Section */}
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Why Choose Us?
-                </h2>
-                <p className="text-xl text-muted-foreground">
-                  We provide comprehensive NCLEX preparation with personalized attention and proven results
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {features.map((feature, index) => (
-                  <Card key={index} className="p-4 border-0 shadow-lg hover:shadow-xl transition-shadow">
-                    <CardContent className="p-0">
-                      <div className="flex items-start space-x-3">
-                        <div className="bg-trust-light rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
-                          {feature.icon}
-                        </div>
-                        <div>
-                          <h3 className="text-lg font-semibold text-foreground mb-2">
-                            {feature.title}
-                          </h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {feature.description}
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-            
-            <div>
-              <img 
-                src={studentsImage} 
-                alt="Diverse group of nursing students collaborating on NCLEX preparation" 
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Why Choose Us?
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We provide comprehensive NCLEX preparation with personalized attention and proven results
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="text-center p-6 h-full border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardContent className="p-0">
+                  <div className="bg-trust-light rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
